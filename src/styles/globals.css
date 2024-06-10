@@ -15,38 +15,4 @@
   .main-container {
     @apply container px-4 mx-auto md:px-4 lg:px-4 2xl:px-20;
   }
-
-  .public-container {
-    @apply container px-4 mx-auto md:px-20 2xl:px-72;
-  }
-
-  .main-containerPanel {
-    @apply container px-4 mx-auto md:px-5 lg:px-8 2xl:px-12;
-  }
-
-  .secondary-container {
-    @apply container mx-auto px-36 md:px-40 lg:px-48 2xl:px-64;
-  }
-  .common-transition {
-    @apply transition-all ease-in-out duration-300 !important;
-  }
-  .title {
-    @apply text-xl font-bold tracking-wide capitalize md:text-2xl lg:text-3xl;
-  }
-  .btn-primary {
-    @apply bg-primary grid place-items-center text-white tracking-wide capitalize shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:bg-[#4b418b] transition-all ease-in-out duration-100;
-  }
-  .btn-secondary {
-    @apply bg-secondary grid place-items-center text-white tracking-wide capitalize shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:bg-[#bc3253] transition-all ease-in-out duration-100;
-  }
-  .btn-gradient {
-    @apply px-4 py-2 font-semibold tracking-wide text-white capitalize rounded-md bg-gradient-to-r from-primary to-secondary;
-  }
-
-  .btn-gradient-border {
-    background: linear-gradient(white, white) padding-box,
-      linear-gradient(to right, #f53844, #42378f) border-box;
-    border: 2px solid transparent;
-    text-transform: capitalize;
-  }
 }
