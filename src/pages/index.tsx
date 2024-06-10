@@ -7,15 +7,17 @@ export default function Home() {
   const [curIndex, setCurIndex] = useState<number>(2);
   const [praise, setPraise] = useState<number>(2);
   return (
-    <section className="w-full main-container pt-2">
+    <section className="w-full  pt-2 relative">
       <button
-        className="py-3 w-fit bg-green-600 text-white text-xl px-6"
+        className={`py-3 w-fit bg-green-600 text-white text-xl px-5 ${
+          open && 'bg-white'
+        }`}
         onClick={() => setOpen(!open)}
       >
         Give Rating
       </button>
       {open && (
-        <div className="py-2   absolute bg-white top-0">
+        <div className="py-2  w-[99%] absolute bg-white top-0 px-3">
           <IoIosClose size={40} className="" onClick={() => setOpen(!open)} />
           <div className=" flex flex-col gap-4  ">
             <h2 className="text-3xl font-bold">Leave a review</h2>
@@ -79,7 +81,7 @@ export default function Home() {
                     <div
                       key={item?.id}
                       onClick={() => setPraise(item?.id)}
-                      className={` cursor-pointer py-1 px-5 rounded-3xl ${
+                      className={` cursor-pointer py-2 px-5 rounded-3xl ${
                         praise === item?.id
                           ? 'text-white bg-green-600'
                           : 'bg-gray-400/20'

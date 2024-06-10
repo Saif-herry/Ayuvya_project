@@ -16,3 +16,8 @@
     @apply container px-4 mx-auto md:px-4 lg:px-4 2xl:px-20;
   }
 }
+@layer components {
+  .main-big {
+    @apply px-4 mx-auto md:px-4 lg:px-4 2xl:px-20;
+  }
+}
